@@ -1,4 +1,47 @@
-﻿using System;
+﻿
+// ************************************************************************
+// Practica 09
+// Alex Calderon, Joselyn Martinez
+// Fecha de realización: 15/12/2024
+// Fecha de entrega: 18/12/2024
+
+// Resultados:
+// Acerca del Codigo antes de los cambios
+//se observa el uso de ASP.NET MVC para el desarrollo de la interfaz de usuario considerando el patrón MVC
+//(Modelo- Vista- Controlador). Además, del uso de Entity Framework para la gestión de la base de datos,
+//lo que permitió el manejo de diferentes operaciones de lectura, creación, actualización y eliminación. 
+//De manera específica, las pruebas que se realizaron para corroborar el funcionamiento correcto fueron:
+//•	Se comprobó que el método Index del controlador AsignaturaController permita devolver de manera correcta
+//la lista de las asignaturas presentes en la base de datos y que se pueda visualizar la lista completa.
+//Además, de verificar que en la vista de detalles se muestra de la manera correcta la información de la asignatura correspondiente. 
+//•	En la creación de asignaturas se realizo diferentes pruebas para poder asegurar que se cree de manera
+//correcta una asignatura, y que los datos se guarden en la base datos. De manera similar se realizo con
+//la edición y eliminación de las asignaturas al corroborar que la información se almacene de manera correcta.
+
+
+// Acerca del Codigo despues de los cambios
+//la aplicación permitieron mejorar el modelo de los datos y optimizar el proceso de gestión de las asignaturas.
+//Donde, se puede visualizar en las figuras anteriores que se agregaron varios componentes de CD, CP y AA.
+//De la misma manera, se ajusto las horas considerando los créditos de las asignaturas lo que permite el cálculo de las horas
+//de manera automática sin tener la necesidad que la propiedad “Horas” se modifique.
+//Además, las vistas se actualizaron para poder mostrar la información agregada.
+//Finalmente, se realizaron cambios en el título de la aplicación para que sea más personalizado. 
+
+// Conclusiones:
+//•	Por medio de la práctica, se evidencio que al implementar ASP.NET MVC se logra tener una arquitectura mejor organizada,
+//debido a que, permite separar de manera adecuada el acceso a los datos, las vistas y controladores.
+//•	El uso de Entity Framework permite un mejor manejo de los datos en la base de datos junto con
+//la manipulación adecuada de los objetos. Lo cual, brinda la capacidad de tener una gestión eficiente y sencilla de la información referentes
+//a las asignaturas. 
+//•	La implementación de validaciones personalizadas brinda la posibilidad de verificar
+//diferentes parámetros de manera más específica considerando los requisitos del funcionamiento de la aplicación. 
+
+// Recomendaciones:
+//•	Se recomienda emplear el manejo de excepciones más detalladas en los controladores y la parte de base de datos, para poder identificar, reconocer e informar los errores o conflictos al usar la aplicación. 
+//•	Es recomendable incluir un diseño más amigable para el usuario para facilitar su interacción, en el cual, se puede colocar estilos de manera específica o usar frameworks como Bootstrap para tener una interacción más dinámica.
+// ************************************************************************
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
