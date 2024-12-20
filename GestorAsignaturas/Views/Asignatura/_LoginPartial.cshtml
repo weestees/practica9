@@ -1,0 +1,15 @@
+﻿@* Views/Shared/_LoginPartial.cshtml *@
+@using Microsoft.AspNet.Identity
+
+@if (Request.IsAuthenticated)
+{
+    <div>
+        @Html.ActionLink("Log off", "LogOff", "Account")
+    </div>
+}
+else
+{
+    <div>
+        @Html.ActionLink("Log in", "Login", "Account")
+    </div>
+}

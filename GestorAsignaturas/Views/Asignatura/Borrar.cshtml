@@ -1,0 +1,47 @@
+﻿@model GestorAsignaturas.Models.Asignatura
+
+@{
+    ViewBag.Title = "Eliminar Asignatura";
+}
+
+<h2>Eliminar Asignatura</h2>
+<h3>¿Está seguro que desea eliminar esta asignatura?</h3>
+<div>
+    <h4>Asignatura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Creditos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Creditos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Horas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Horas)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Cancelar", "Index")
+        </div>
+    }
+</div>

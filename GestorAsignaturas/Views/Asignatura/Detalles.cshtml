@@ -1,0 +1,42 @@
+﻿@model GestorAsignaturas.Models.Asignatura
+
+@{
+    ViewBag.Title = "Detalles de la Asignatura";
+}
+
+<h2>Detalles de la Asignatura</h2>
+
+<div>
+    <h4>Asignatura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Nombre)</dt>
+        <dd>@Html.DisplayFor(model => model.Nombre)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Codigo)</dt>
+        <dd>@Html.DisplayFor(model => model.Codigo)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Creditos)</dt>
+        <dd>@Html.DisplayFor(model => model.Creditos)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.CD)</dt>
+        <dd>@Html.DisplayFor(model => model.CD)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.CP)</dt>
+        <dd>@Html.DisplayFor(model => model.CP)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.AA)</dt>
+        <dd>@Html.DisplayFor(model => model.AA)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Horas)</dt>
+        <dd>@Html.DisplayFor(model => model.Horas)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Area)</dt>
+        <dd>@Html.DisplayFor(model => model.Area)</dd>
+    </dl>
+</div>
+
+<div>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.ID }, new { @class = "btn btn-warning" }) |
+    @Html.ActionLink("Volver a la lista", "Index", null, new { @class = "btn btn-default" })
+</div>
